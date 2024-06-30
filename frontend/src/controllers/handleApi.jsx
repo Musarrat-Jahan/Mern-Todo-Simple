@@ -1,8 +1,8 @@
 import axios from "axios";
-const baseURL = "https://mern-todo-simple-be.vercel.app"
+const baseURL = "https://mern-todo-simple.vercel.app"
 const getAllTodo =(setToDo) => {
     axios
-    .get("https://mern-todo-simple-be.vercel.app")
+    .get("https://mern-todo-simple.vercel.app/test")
     .then(({data}) =>{
         console.log("Data==>" , data)
         setToDo(data)
